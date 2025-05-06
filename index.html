@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131: Dynamic Web Fundamentals - Rubia M. Francesco</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Rubia M. Francesco. Home page for WDD 131 course, including navigation, cards, and dynamic date information.">
+  <meta name="author" content="Rubia Magdalena Francesco">
+  <link rel="stylesheet" href="styles/base.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>WDD 131: Dynamic Web Fundamentals <span class="highlight">- Rubia M. Francesco</span></h1>
+    <nav>
+      <ul>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a></li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="about-card">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>My name is Rubia and I go by Ruby. I was born in South Africa and live with my family in Madagascar. I am currently working as an administrative legal assistant at a law firm. My children are my world and I love spending time with them. I love to travel and I love to learn new things.</p>
+          <div class="island-info">
+            <h3>Toloria, Madagascar</h3>
+            <div class="island-details">
+              <img src="images/madagascar-flag.png" alt="Official Flag of Madagascar" class="flag">
+              <div>
+                <p>Madagascar is the 4th largest island in the world and is located in the Indian Ocean. It is home to 5% of the world's plant and animal species, of which more than 80% are endemic to Madagascar. The island is best known for its lemurs, baobab trees, and vanilla.</p>
+                <span class="flag-caption"><em>Official Flag of Madagascar</em></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-photo">
+          <img src="images/your-photo.jpg" alt="Rubia M. Francesco" width="140" height="180">
+        </div>
+      </div>
+    </section>
+    <aside class="resources-card">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://dev.to/">Dev.to Community</a></li>
+        <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+        <li><a href="https://www.udemy.com/">Udemy</a></li>
+        <li><a href="https://placeholder.com/">Image Placeholder</a></li>
+      </ul>
+    </aside>
+  </main>
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> Rubia Magdalena Francesco <span class="footer-icon">🌸</span> Madagascar
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
