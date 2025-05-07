@@ -108,6 +108,7 @@
   .about-text {
     flex: 2;
     font-size: 1rem;
+    text-align: justify;
     color: #222;
   }
   
@@ -139,7 +140,7 @@
     border-bottom: 1px solid #bfc9d1;
     padding-bottom: 0.2rem;
   }
-  
+   
   .island-details {
     display: flex;
     align-items: flex-start;
@@ -147,8 +148,8 @@
   }
   
   .flag {
-    width: 90px;
-    height: 60px;
+    width: 140px;
+    height: 100px;
     border: 1px solid #aaa;
     margin-right: 0.5rem;
     margin-top: 0.2rem;
@@ -159,8 +160,9 @@
     font-size: 0.9em;
     color: #444;
     margin-top: 0.3rem;
+    text-align: center;
   }
-  
+ 
   .resources-card {
     border: 1px solid var(--resources-border);
     background: var(--resources-bg);
@@ -194,6 +196,7 @@
   .resources-card a {
     color: #2a4365;
     text-decoration: underline;
+    font-weight: bold;
     transition: color 0.2s;
   }
   
