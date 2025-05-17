@@ -17,7 +17,6 @@ header, footer {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0.5rem 1rem;
-  position: relative;
 }
 
 .site-title {
@@ -26,33 +25,12 @@ header, footer {
   padding: 0.5rem 0;
 }
 
-#hamburger {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 2rem;
-  cursor: pointer;
-  display: block;
-}
-
-#nav-menu {
-  display: none;
-  flex-direction: column;
-  gap: 1rem;
-  background: #4B006E;
-  position: absolute;
-  top: 60px;
-  right: 1rem;
-  padding: 1rem;
-  border-radius: 8px;
-  z-index: 10;
-}
-
-#nav-menu.open {
+nav {
   display: flex;
+  gap: 1.5rem;
 }
 
-#nav-menu a {
+nav a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
@@ -62,8 +40,8 @@ header, footer {
   transition: background 0.2s, color 0.2s;
 }
 
-#nav-menu a:hover,
-#nav-menu a:focus {
+nav a:hover,
+nav a:focus {
   background: #fff;
   color: #4B006E;
 }
@@ -77,17 +55,17 @@ main {
 
 h1 {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 h2 {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 1.5rem;
   color: #4B006E;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
 }
 
 .album-grid {
