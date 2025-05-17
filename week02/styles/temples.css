@@ -1,0 +1,112 @@
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #222;
+}
+
+header, footer {
+  background: #4B006E;
+  color: #fff;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}
+
+.site-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a:focus {
+  background: #fff;
+  color: #4B006E;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background: #fff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+figure {
+  margin: 0;
+  background: #fff;
+  text-align: center;
+}
+
+figure img {
+  width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #4B006E;
+}
+
+figcaption a {
+  color: #4B006E;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+figcaption a:hover,
+figcaption a:focus {
+  color: #222;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0 0.5rem 0;
+  font-size: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+}
+
+footer p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
