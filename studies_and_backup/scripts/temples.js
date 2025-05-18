@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('currentyear').textContent = new Date().getFullYear();
   document.getElementById('lastModified').textContent = "Last Modification: " + document.lastModified;
 
-  // Responsive navigation menu
+  // Hamburger menu functionality
   const hamburger = document.getElementById('hamburger');
   const navMenu = document.getElementById('nav-menu');
 
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.textContent = navMenu.classList.contains('open') ? '✖' : '☰';
   });
 
-  // Reset menu on resize
+  // Ensure menu resets on resize
   window.addEventListener('resize', () => {
     if (window.innerWidth >= 700) {
       navMenu.classList.remove('open');

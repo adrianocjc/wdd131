@@ -1,0 +1,17 @@
+@media (min-width: 700px) {
+  #hamburger {
+    display: none;
+  }
+  #nav-menu {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: none;
+    padding: 0;
+    gap: 1.5rem;
+  }
+  .album-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
