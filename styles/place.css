@@ -1,0 +1,155 @@
+/* Global CSS Variables */
+:root {
+    --primary-color: #bc002d; /* Red from Japanese flag */
+    --secondary-color: #ffffff; /* White from Japanese flag */
+    --accent-color: #000000; /* Black for contrast */
+    --text-color: #333333;
+    --background-color: #f5f5f5;
+    --card-background: #ffffff;
+    --header-font: 'Noto Sans JP', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-family: var(--header-font);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Hero Section */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Info Section */
+.info-section {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info-card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-family: var(--header-font);
+}
+
+/* Weather Card Specific */
+.weather-info {
+    display: flex;
+    align-items: center;
+}
+
+.weather-icon {
+    margin-right: 1rem;
+}
+
+.weather-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Attractions Section */
+.attractions {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.attractions h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-family: var(--header-font);
+}
+
+.attraction-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.attraction {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.attraction h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Media Query for Wider Screens */
+@media screen and (min-width: 768px) {
+    .info-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .info-card {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .attraction-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Weather icon for wider screens using pseudo-element */
+    .weather-card h2::after {
+        content: " ⛅"; /* Added space before the emoticon */
+        margin-left: 10px;
+    }
+
+    /* Hide mobile weather icon in wider view */
+    .mobile-icon {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .attraction-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

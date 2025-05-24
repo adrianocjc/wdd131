@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan - Land of the Rising Sun</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Japan</h1>
+        <p>Land of the Rising Sun</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/japan-small.webp">
+                <source media="(min-width: 601px)" srcset="images/japan-large.webp">
+                <img src="images/japan-large.webp" alt="Mount Fuji with cherry blossoms in Japan">
+            </picture>
+        </section>
+
+        <section class="info-section">
+            <div class="info-card">
+                <h2>Geography</h2>
+                <p>Japan is an island country in East Asia, located in the northwest Pacific Ocean. It consists of four main islands: Honshu, Hokkaido, Kyushu, and Shikoku, along with 6,848 smaller islands. The country spans 377,975 square kilometers and has a varied geography with mountains, forests, and coastlines.</p>
+            </div>
+
+            <div class="info-card">
+                <h2>Culture</h2>
+                <p>Japanese culture is a blend of traditional values and modern innovations. From ancient temples and tea ceremonies to anime and cutting-edge technology, Japan offers a unique cultural experience. The country is known for its politeness, respect for elders, and strong work ethic.</p>
+            </div>
+
+            <div class="info-card weather-card">
+                <h2>Weather</h2>
+                <div class="weather-info">
+                    <div class="weather-icon">
+                        <img src="images/cloudy.svg" alt="Cloudy weather icon" class="mobile-icon">
+                    </div>
+                    <div class="weather-data">
+                        <p>Temperature: 8°C</p>
+                        <p>Wind Speed: 10 km/h</p>
+                        <p>Wind Chill: <span id="windchill"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="attractions">
+            <h2>Must-Visit Attractions</h2>
+            <div class="attraction-grid">
+                <div class="attraction">
+                    <h3>Mount Fuji</h3>
+                    <p>Japan's highest mountain and an active volcano, standing at 3,776 meters. It's considered one of Japan's three sacred mountains.</p>
+                </div>
+                <div class="attraction">
+                    <h3>Kyoto Temples</h3>
+                    <p>Home to over 1,600 Buddhist temples and 400 Shinto shrines, Kyoto preserves Japan's ancient cultural heritage.</p>
+                </div>
+                <div class="attraction">
+                    <h3>Tokyo Skytree</h3>
+                    <p>A broadcasting and observation tower in Tokyo that stands 634 meters tall, making it the tallest structure in Japan.</p>
+                </div>
+                <div class="attraction">
+                    <h3>Hiroshima Peace Memorial</h3>
+                    <p>A UNESCO World Heritage Site dedicated to the legacy of Hiroshima as the first city to suffer atomic bombing.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Japan Travel Guide | Last Updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
