@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W05 Product Review Form</title>
+  <link rel="stylesheet" href="styles/review.css">
+</head>
+<body>
+  <main>
+    <h1>Product Review</h1>
+    <form id="reviewForm">
+      <label for="productName">Product Name <span class="required">*</span></label>
+      <select id="productName" name="productName" required>
+        <option value="">Select a product...</option>
+        <!-- Options will be populated by JS -->
+      </select>
+
+      <label for="rating">Overall Rating <span class="required">*</span></label>
+      <select id="rating" name="rating" required>
+        <option value="">Select a rating...</option>
+        <option value="1">1 - Poor</option>
+        <option value="2">2 - Fair</option>
+        <option value="3">3 - Good</option>
+        <option value="4">4 - Very Good</option>
+        <option value="5">5 - Excellent</option>
+      </select>
+
+      <label for="installDate">Date of Installation <span class="required">*</span></label>
+      <input type="date" id="installDate" name="installDate" required>
+
+      <label for="features">Which features did you use?</label>
+      <textarea id="features" name="features" rows="3"></textarea>
+
+      <label for="review">Additional Comments</label>
+      <textarea id="review" name="review" rows="4"></textarea>
+
+      <button type="submit">Submit Review</button>
+    </form>
+    <div id="reviewCount"></div>
+  </main>
+  <script src="scripts/review.js"></script>
+</body>
+</html>
