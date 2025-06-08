@@ -1,75 +1,149 @@
+/* Background gradient */
 body {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  color: #222;
+  min-height: 100vh;
   margin: 0;
-  padding: 0;
-}
-
-main {
-  max-width: 500px;
-  margin: 2rem auto;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  padding: 2rem;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-form {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #b3d8f7 0%, #e6f0fa 100%);
+  color: #1a237e;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  min-height: 100vh;
 }
 
+/* Center the form card */
+.centered-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form card styling */
+.form-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(26, 35, 126, 0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 420px;
+  width: 100%;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Header */
+.form-title {
+  color: #1a237e;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Form groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.3rem;
+}
+
+/* Labels */
 label {
-  font-weight: bold;
-  margin-bottom: 0.25rem;
+  color: #1a237e;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
 }
 
-input, select, textarea, button {
-  font-size: 1rem;
-  padding: 0.5rem;
-  border-radius: 4px;
-  border: 1px solid #bbb;
-}
-
-input:required, select:required {
-  border-left: 4px solid #0077cc;
-}
-
+/* Required asterisk */
 .required {
-  color: #d00;
+  color: #d32f2f;
   font-weight: bold;
+  margin-left: 2px;
 }
 
-button {
-  background: #0077cc;
+/* Inputs, selects, textareas */
+input[type="date"],
+select,
+textarea {
+  background: #f3f6fb;
+  border: 1px solid #e3eaf3;
+  border-radius: 8px;
+  padding: 0.7rem 0.9rem;
+  font-size: 1rem;
+  margin-top: 2px;
+  transition: border 0.2s;
+  outline: none;
+  color: #1a237e;
+}
+
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  border: 1.5px solid #1976d2;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  background: #1976d2;
   color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
   border: none;
+  border-radius: 8px;
+  padding: 0.9rem 0;
+  margin-top: 0.7rem;
   cursor: pointer;
-  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
   transition: background 0.2s;
+  letter-spacing: 0.5px;
 }
 
-button:hover {
-  background: #005fa3;
+.submit-btn:hover,
+.submit-btn:focus {
+  background: #1565c0;
 }
 
+/* Review count */
 #reviewCount {
   margin-top: 1.5rem;
   text-align: center;
-  color: #555;
-  font-size: 1.1rem;
+  color: #1976d2;
+  font-size: 1.08rem;
+  font-weight: 500;
 }
 
-/* Accessibility: High contrast for required fields */
+/* Footer */
+.site-footer {
+  width: 100%;
+  background: #1976d2;
+  color: #fff;
+  text-align: center;
+  padding: 1.1rem 0 1rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin-top: 2.5rem;
+  box-shadow: 0 -2px 12px rgba(25, 118, 210, 0.07);
+}
+
+.site-footer span {
+  font-weight: 600;
+}
+
 @media (max-width: 600px) {
-  main {
-    padding: 1rem;
+  .form-card {
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+    max-width: 98vw;
+  }
+  .form-title {
+    font-size: 1.3rem;
+  }
+  .site-footer {
+    font-size: 0.95rem;
+    padding: 0.8rem 0 0.7rem 0;
   }
 }
