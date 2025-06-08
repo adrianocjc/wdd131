@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // localStorage: Track number of reviews
-  const formsForm = document.getElementById('formsForm');
+  const formForm = document.getElementById('formForm');
   const reviewCountDiv = document.getElementById('reviewCount');
 
   function updateReviewCount() {
@@ -29,15 +29,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  if (formsForm) {
-    formsForm.addEventListener('submit', function(e) {
+  if (formForm) {
+    formForm.addEventListener('submit', function(e) {
       e.preventDefault();
       let count = parseInt(localStorage.getItem('reviewCount') || '0', 10);
       count += 1;
       localStorage.setItem('reviewCount', count);
       updateReviewCount();
       alert('Thank you for your review!');
-      formsForm.reset();
+      formForm.reset();
     });
   }
 
