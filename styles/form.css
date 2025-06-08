@@ -1,8 +1,7 @@
-/* Background gradient */
 body {
   min-height: 100vh;
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
   background: linear-gradient(135deg, #b3d8f7 0%, #e6f0fa 100%);
   color: #1a237e;
   display: flex;
@@ -10,7 +9,6 @@ body {
   min-height: 100vh;
 }
 
-/* Center the form card */
 .centered-container {
   flex: 1;
   display: flex;
@@ -18,7 +16,6 @@ body {
   align-items: center;
 }
 
-/* Form card styling */
 .form-card {
   background: #fff;
   border-radius: 18px;
@@ -32,7 +29,6 @@ body {
   align-items: stretch;
 }
 
-/* Header */
 .form-title {
   color: #1a237e;
   font-size: 2rem;
@@ -42,14 +38,12 @@ body {
   letter-spacing: 1px;
 }
 
-/* Form groups */
 .form-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.3rem;
 }
 
-/* Labels */
 label {
   color: #1a237e;
   font-weight: 600;
@@ -57,17 +51,16 @@ label {
   font-size: 1.05rem;
 }
 
-/* Required asterisk */
 .required {
   color: #d32f2f;
   font-weight: bold;
   margin-left: 2px;
 }
 
-/* Inputs, selects, textareas */
 input[type="date"],
 select,
-textarea {
+textarea,
+input[type="text"] {
   background: #f3f6fb;
   border: 1px solid #e3eaf3;
   border-radius: 8px;
@@ -81,11 +74,11 @@ textarea {
 
 input[type="date"]:focus,
 select:focus,
-textarea:focus {
+textarea:focus,
+input[type="text"]:focus {
   border: 1.5px solid #1976d2;
 }
 
-/* Button */
 .submit-btn {
   width: 100%;
   background: #1976d2;
@@ -107,7 +100,6 @@ textarea:focus {
   background: #1565c0;
 }
 
-/* Review count */
 #reviewCount {
   margin-top: 1.5rem;
   text-align: center;
@@ -116,7 +108,6 @@ textarea:focus {
   font-weight: 500;
 }
 
-/* Footer */
 .site-footer {
   width: 100%;
   background: #1976d2;
