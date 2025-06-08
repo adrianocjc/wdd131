@@ -1,21 +1,37 @@
-body {
-    font-family: 'Open Sans', Arial, sans-serif;
-    color: #333333;
-    background-color: #f5f5f5;
-    line-height: 1.6;
+:root {
+    --primary-color: #bc002d; 
+    --secondary-color: #ffffff; 
+    --accent-color: #000000; 
+    --text-color: #333333;
+    --background-color: #f5f5f5;
+    --card-background: #ffffff;
+    --header-font: 'Noto Sans JP', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
 }
 
 header {
-    background-color: #bc002d;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 2rem 1rem;
 }
 
 header h1 {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--header-font);
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
@@ -34,16 +50,16 @@ header h1 {
 }
 
 .info-card {
-    background-color: #ffffff;
+    background-color: var(--card-background);
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .info-card h2 {
-    color: #bc002d;
+    color: var(--primary-color);
     margin-bottom: 1rem;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--header-font);
 }
 
 .weather-info {
@@ -66,10 +82,10 @@ header h1 {
 }
 
 .attractions h2 {
-    color: #bc002d;
+    color: var(--primary-color);
     text-align: center;
     margin-bottom: 1.5rem;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--header-font);
 }
 
 .attraction-grid {
@@ -79,22 +95,52 @@ header h1 {
 }
 
 .attraction {
-    background-color: #ffffff;
+    background-color: var(--card-background);
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .attraction h3 {
-    color: #bc002d;
+    color: var(--primary-color);
     margin-bottom: 0.5rem;
-    font-family: 'Noto Sans JP', sans-serif;
 }
 
 footer {
-    background-color: #bc002d;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 1.5rem;
     margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .info-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .info-card {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .attraction-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .weather-card h2::after {
+        content: " ⛅"; 
+        margin-left: 10px;
+    }
+
+    .mobile-icon {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .attraction-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
